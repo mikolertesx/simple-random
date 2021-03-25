@@ -12,6 +12,7 @@
     "generator",
     "rng"
   ],
+  "repository": "https://github.com/mikolertesx/simple-random",
   "author": "Miguel Angel Guerrero Salinas",
   "license": "ISC"
 }
