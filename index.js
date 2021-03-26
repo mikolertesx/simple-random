@@ -20,8 +20,7 @@ class SimpleRandom {
       );
     }
     const length = array.length;
-    // Javascript Math.Random excludes the last.
-    const max = length;
+    const max = length - 1;
     const min = 0;
     const index = this.chooseMinMaxInt(min, max);
     return array[index];
