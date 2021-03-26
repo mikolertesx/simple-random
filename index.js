@@ -26,6 +26,20 @@ class SimpleRandom {
     const index = this.chooseMinMaxInt(min, max);
     return array[index];
   }
+
+  static weightedChance(percentage) {
+    if (percentage < 0 || percentage > 100) {
+      throw new Error(
+        "A percentage above 100 or below 0 was provided to the 'weightedChance' function."
+      );
+    }
+
+    const number = this.chooseMinMaxInt(0, 101);
+    if (number <= percentage) {
+      return true;
+    }
+    return false;
+  }
 }
 
 module.exports = SimpleRandom;
